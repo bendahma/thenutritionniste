@@ -148,8 +148,9 @@ margin-bottom: 20px;
     margin-top :20px;
 
 }
-.services .col-md-3:hover {
+.services .col-lg-4:hover {
     background: lightcoral;
     cursor: pointer;
     transition: 0.7s;
+    color:black;
 }
