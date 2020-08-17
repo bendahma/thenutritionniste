@@ -47,7 +47,7 @@
               <a class="nav-link" href="index.php"> Accueil </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Recettes et cuisine </a>
+              <a class="nav-link" href="./recette.php"> Recettes et cuisine </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Ton programmes  </a>

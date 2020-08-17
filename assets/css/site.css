@@ -1,0 +1,380 @@
+
+/*---NAVIGATION BAR--*/
+#nav-bar
+{
+position : sticky ;
+top : 0;
+z-index: 10 ;
+
+}
+.navbar-brand img
+{
+    height: 5vh ;
+    padding-left: 10px ;
+}
+.navbar-nav li 
+{
+padding: 0 10px;
+}
+.navbar-nav li a
+{
+float: right;
+text-align: left;
+}
+#nav-bar ul li a:hover
+{ color: blueviolet!important;
+font-weight: 700;}
+.navbar
+{
+    background: rgb(243, 134, 94) !important;
+}
+.navbar-toggler
+{
+border: paleturquoise;
+}
+.nav-link
+{
+    color: rgb(146, 68, 12)!important;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/*---slider--*/
+#slider{
+    width: 90vw;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial!important;
+}
+
+.carousel-caption .innerC {
+    padding: 100px;
+    background-color: rgba(69, 74, 78, 0.5);
+}
+
+.recetteContent{
+    height: 90vh;
+    background-color: rgba(69, 74, 78, 0.575);
+    color:white;
+}
+
+.carousel-caption h5 {
+    color: white;
+    font-size: 38px;
+}
+.carousel-caption p {
+    color: white;
+    font-size: 26px;
+}
+
+.w-100{
+    height: 90vh;
+    object-fit: fill;
+}
+
+/*---about-- */
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: brown;
+}
+#about btn 
+{
+    margin-top: 20 px;
+    margin-bottom: 30px ;
+}
+.about content 
+{
+    padding-top: 300px;
+}
+.skills-bar p 
+{
+margin-bottom: 6px;
+font-weight: 600;
+}
+.progress-bar
+{
+    border-radius: 16px;
+
+}
+.progress-bar
+ {
+border-radius: 16px !important;
+margin-bottom: 20px;
+}
+/*------services--------*/
+#services 
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8) , rgba(0,0,0,0.8)), url(image/services.jpg) ;
+    background-size: cover;
+    background-position: center;
+    color: burlywood !important ;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1 
+{
+    text-align: center;
+    color: darksalmon;
+    padding-bottom: 10px;
+
+}
+#services h1::after
+{
+    content: '';
+    background: lemonchiffon;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin:20px auto 5px; 
+
+
+    
+}
+.services
+{
+    margin-top: 40px;
+
+}
+.icon 
+{
+    font-size: 40px;
+    margin: 20px auto ;
+    padding : 20px;
+    height: 80px;
+    width: 80px;
+}
+#services p
+{
+    font-size:14px ;
+    margin-top :20px;
+
+}
+.services .col-lg-4:hover {
+    background: lightcoral;
+    cursor: pointer;
+    transition: 0.7s;
+    color:black;
+}
+
+
+#sante {
+    background-image: rgba(255, 255, 255, 0.925)  ;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0) !important ;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#sante h1 
+{
+    text-align: center;
+    color: rgb(77, 73, 73);
+    padding-bottom: 10px;
+
+}
+#sante h1::after
+{
+    content: '';
+    background: rgb(66, 65, 65);
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin:20px auto 5px; 
+
+
+    
+}
+
+
+
+form {
+    width: 450px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 2%;
+    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+/* form Container */
+form .con {
+    display: -webkit-flex;
+    display: flex;
+  
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  
+      margin: 0 auto;
+}
+
+/* the header form form */
+header {
+    margin: 2% auto 10% auto;
+    text-align: center;
+}
+/* Login title form form */
+header h2 {
+    font-size: 250%;
+    font-family: 'Playfair Display', serif;
+    color: #3e403f;
+}
+/*  A welcome message or an explanation of the login form */
+header p {letter-spacing: 0.05em;}
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+#eye {
+    background: #fff;
+    color: #333;
+  
+    margin: 5.9px 0 0 0;
+    margin-left: -20px;
+    padding: 15px 9px 19px 0px;
+    border-radius: 0px 5px 5px 0px;
+  
+    float: right;
+    position: relative;
+    right: 1%;
+    top: -.2%;
+    z-index: 5;
+    
+    cursor: pointer;
+}
+/* inputs form  */
+input[class="form-input"]{
+    width: 240px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+input[id="txt-input"] {width: 250px;}
+/* focus  */
+input:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+
+.log-in{
+    background-color: lightgreen;
+    color:black;
+    font-weight:600;
+}
+
+.log-in {
+    display: inline-block;
+    color: #252537;
+    width: 280px;
+    height: 50px;
+    padding: 0 20px;
+    background: lightcoral;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+.frgt-pass {background: transparent;}
+
+.sign-up {background: #B8F2E6;}
+
+
+button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+    0% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+
+#footer {
+    height: 30vh;
+    background-color:  rgb(253, 107, 54) !important;
+};
+}
+
+
+#recetteList {
+    background-image: rgba(255, 255, 255, 0.8) , rgba(0,0,0,0.8);
+    
+    color: burlywood !important ;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top:  5rem;
+}
+#recetteList h1 
+{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+
+}
+#recetteList h1::after
+{
+    content: '';
+    background: rgb(0, 0, 0);
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin:20px auto 5px; 
+}
+
+.recetteDetails img{
+    width: 25vw;
+}
+
+.recetteLink{
+    color:black;
+    text-decoration: none;
+}

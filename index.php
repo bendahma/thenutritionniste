@@ -86,7 +86,6 @@
                       }else {
                         echo '<a type="button" class="btn btn-success btn-block mb-4" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>';
                       }; ?>
-            
               </div>
 
             <div class="col-lg-4 text-center">
