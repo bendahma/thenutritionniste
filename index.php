@@ -75,6 +75,7 @@
         </h1>
         <div class=" row services">
             <div class="col-lg-4 text-center">
+            
                 <div class="icon">
                     <i class="fa fa-desktop"></i>
                 </div>
@@ -98,7 +99,7 @@
                     <?php if(isset($_SESSION['user'])) { 
                             echo "<a href='' class='btn btn-primary btn-block mb-4'> Choisi une recette " . $_SESSION['user'] . '</a> ' ; 
                       }else {
-                        echo '<a type="button" class="btn btn-success btn-block mb-4" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>';
+                        echo '<a type="button" class="btn btn-primary btn-block mb-4" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>';
                       }; ?>
             </div>
                 <div class="col-lg-4 text-center">
