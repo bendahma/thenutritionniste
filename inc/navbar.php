@@ -64,7 +64,7 @@
                 <?php if(isset($_SESSION['user'])) { 
                             echo "Bienvenue : " . $_SESSION['user'] . ' ' . '<a href="./functions/logout.php" class="badge">Logout</a>'; 
                       }else {
-                        echo '<a class="nav-link " href="#"></a> <a type="button" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a> <a class="nav-link " href="#">S\'inscrire</a> ';
+                        echo '<a type="button" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a> <a type="button" class="nav-link" data-toggle="modal" data-target="#registerModel">S\'inscrire</a> ';
                       }; ?>
 
                   

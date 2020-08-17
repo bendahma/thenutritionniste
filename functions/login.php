@@ -9,16 +9,15 @@
         $password = mysqli_real_escape_string($connect,$_POST['password']); 
       
 
-        $sql = "SELECT id FROM users WHERE username = '$username' and password = '$password'";
+        $sql = "SELECT * FROM users WHERE username = '$username' and password = '$password'";
         $result = mysqli_query($connect,$sql);
-        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        $row = mysqli_fetch_assoc($result);
         $count = mysqli_num_rows($result);
         if($count == 1) {
-            $_SESSION['user'] = $username;            
+            $_SESSION['user'] = $row["prenom"];            
             header("location: ../index.php");
          }else{
-            header("location: /nmknkjnmklnmlkmkm,l");
-
+            header("location: ../index.php");
          }
 
     }
