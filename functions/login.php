@@ -14,14 +14,14 @@
         $row = mysqli_fetch_assoc($result);
         $count = mysqli_num_rows($result);
         if($count == 1) {
-            $_SESSION['user'] = $row["prenom"];            
-            header("location: ../index.php");
+            $_SESSION['user'] = $row["prenom"];  
+            if($row['role'] == 'admin'){
+                header("location: ../admin/index.php");
+            }else{
+                header("location: ../index.php");
+            }          
          }else{
             header("location: ../index.php");
-         }
-
+        }
     }
-
-
-
 ?>

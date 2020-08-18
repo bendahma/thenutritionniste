@@ -18,5 +18,4 @@
 
 <?php include "navbar.php"; ?>
 <?php include "login.php"; ?>
-<?php include "register.
-php"; ?>
+<?php include "register.php"; ?>

@@ -12,7 +12,7 @@
         $password = mysqli_real_escape_string($connect,$_POST['password']); 
       
 
-        $sql = "INSERT INTO `users`(`id`, `nom`, `prenom`, `age`, `username`, `password`) VALUES (NULL,'$nom','$prenom','$age','$username','$password')";
+        $sql = "INSERT INTO `users`(`id`, `nom`, `prenom`, `age`, `username`, `password`, 'role') VALUES (NULL,'$nom','$prenom','$age','$username','$password','visiteur')";
         $result = mysqli_query($connect,$sql)  or die('error inserting new user') ;
         
         if($result) {

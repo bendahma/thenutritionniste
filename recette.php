@@ -38,10 +38,14 @@
         </h1>
         <div class="row recetteDetails mt-4">
             <div class="col-lg-4">
-                <a href="" class="recetteLink">
-                    <img class="" src="https://juliasalbum.com/wp-content/uploads/2018/05/Basil-Pesto-Tomato-Mozzarella-Chicken-Bake-10-1-500x456.jpg" height="" alt="">
-                    <h5 class="text-center my-3">BASIL PESTO TOMATO MOZZARELLA CHICKEN BAKE</h5>
-                </a>
+              <a href="" class="recetteLink">
+                  <div class="card card-default">
+                    <div class="card-body">
+                          <img class="" src="https://juliasalbum.com/wp-content/uploads/2018/05/Basil-Pesto-Tomato-Mozzarella-Chicken-Bake-10-1-500x456.jpg" height="" alt="">
+                          <h5 class="text-center my-3">BASIL PESTO TOMATO MOZZARELLA CHICKEN BAKE</h5>
+                    </div>
+                  </div>
+              </a>
             </div>
         </div>
     </div>
