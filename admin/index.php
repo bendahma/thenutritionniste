@@ -1,4 +1,5 @@
 <?php include('./inc/header.php'); ?>
+<?php include('./functions/data.php'); ?>
 
 <?php //include("./inc/mainNav.php"); 
 ?>
@@ -82,14 +83,14 @@
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="">
-                    <form action="" method="POST">
+                    <form action="./functions/recette.php" method="POST">
                             <div class="form-group">
                               <label for="titre">Nom du Recette</label>
-                              <input type="email" class="form-control" id="titre" name="recetteName">
+                              <input type="text" class="form-control" id="titre" name="recetteName">
                             </div>
                             <div class="form-group">
                               <label for="description">Description du recette</label>
-                              <textarea class="form-control" id="description" placeholder="Recette description" rows="8" name="recetteDescription"></textarea>
+                              <textarea class="form-control" id="description" placeholder="Recette description" rows="15" name="recetteDescription"></textarea>
                             </div>
                             <div class="form-group">
                               <label for="Ingredients">Ingredients</label>
@@ -141,26 +142,28 @@
                       <thead class="thead-dark">
                         <tr>
                           <th scope="col">#</th>
-                          <th scope="col">Titre</th>
+                          <th scope="col">Nom</th>
                           <th scope="col">Image</th>
                           <th>Action</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr>
-                          <td >1</td>
-                          <td >Reccete title Reccete title Reccete title Reccete </td>
-                          <td><img src="" alt=""></td>
-                          <td>
-                            <select name="" id="" class="custom-select">
-                              <option value="">Choisi</option>
-                              <option value="">Affiche</option>
-                              <option value="">Edit</option>
-                              <option value="">Delete</option>
-                            </select>
-                          </td>
-                          
+                      <tbody style="font-weight:700;color:black">
+                       <?php while ($row = mysqli_fetch_assoc($result)) { ?>
+                          <tr>
+                              <td ><?php echo $row['id'] ?></td>
+                              <td ><?php echo substr($row['recetteName'],0,25); ?></td>
+                              <td><img src="" alt=""></td>
+                              <td>
+                                <select name="" id="" class="custom-select" onchange="window.location.href=this.value;">
+                                  <option value="">Choisi</option>
+                                  <option value="./../details.php?id=<?php echo $row['id'] ?>">Affiche</option>
+                                  <option value="./../admin/edit.php?id=<?php echo $row['id'] ?>">Edit</option>
+                                  <option value="./../admin/recette/delete.php?id=<?php echo $row['id'] ?>">Delete</option>
+                                </select>
+                              </td>
                         </tr>
+                        <?php } ?>
+                        
                       </tbody>
                     </table>
                   </div>                  
@@ -269,51 +272,4 @@
       </div>
       <!-- End of Main Content -->
 
-      <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
-          </div>
-        </div>
-      </footer>
-      <!-- End of Footer -->
-
-    </div>
-    <!-- End of Content Wrapper -->
-
-  </div>
-  <!-- End of Page Wrapper -->
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-
-  <!-- Logout Modal-->
-  <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
-        </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-        <div class="modal-footer">
-          <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="./../assets/js/jquery.min.js"></script>
-  <script src="./../assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./../assets/js/jquery.easing.min.js"></script>
-  <script src="./../assets/js/sb-admin-2.min.js"></script>
-
-</body>
-
-</html>
+      <?php include('./inc/footer.php'); ?>
