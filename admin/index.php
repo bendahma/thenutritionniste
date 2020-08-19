@@ -20,7 +20,7 @@
 
           <div class="row">
             <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card border-primary shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
@@ -36,7 +36,7 @@
             </div>
 
             <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
+              <div class="card border-success shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
@@ -53,7 +53,7 @@
 
 
             <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
+              <div class="card border-danger shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
@@ -83,7 +83,7 @@
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="">
-                    <form action="./functions/recette.php" method="POST">
+                    <form action="./functions/recette.php" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                               <label for="titre">Nom du Recette</label>
                               <input type="text" class="form-control" id="titre" name="recetteName">
@@ -105,7 +105,7 @@
                               <textarea  class="form-control" id="NutritionFacts" placeholder="Recette Nutrition Facts" rows="4" name="recetteNutritionFacts"></textarea>
                             </div>
                             <div class="form-group">
-                              <label for="Instructions">Image</label>
+                              <label for="">Image</label>
                               <input type="file" name="recetteImage" id="" class="form-control">
                             </div>
                            
@@ -154,7 +154,7 @@
                                           <tr>
                                               <td ><?php echo $row['id'] ?></td>
                                               <td ><?php echo substr($row['recetteName'],0,25) . ' ...' ?></td>
-                                              <td><img src="" alt=""></td>
+                                              <td><img src="./../upload/recette/<?php echo $row['image'] ?>" alt="" width="60px" ></td>
                                               <td>
                                                 <select name="" id="" class="custom-select" onchange="window.location.href=this.value;">
                                                   <option value="">Choisi</option>
@@ -191,7 +191,7 @@
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="">
-                    <form action="" method="POST">
+                    <form action="" method="POST" enctype="multipart/form-data" >
                             <div class="form-group">
                               <label for="regimeType">Type de régime</label>
                               <select name="regimeType" id="" class="form-control">
@@ -214,7 +214,7 @@
                             
                             <div class="form-group">
                               <label for="Instructions">Image</label>
-                              <input type="file" name="recetteImage" id="" class="form-control">
+                              <input type="file" name="regemeImage" id="" class="form-control">
                             </div>
                            
                            <div class="row">
