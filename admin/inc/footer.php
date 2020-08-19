@@ -28,7 +28,7 @@
   <script>
     tinymce.init({
       selector: 'textarea',
-      plugins: "lists quickbars",
+      plugins: "lists ",
       toolbar: "numlist bullist bold italic | formatselect | quicklink blockquote"
 
     //   plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',

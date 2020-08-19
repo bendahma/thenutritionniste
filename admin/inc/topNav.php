@@ -6,12 +6,13 @@
   <i class="fa fa-bars"></i>
 </button>
 
-<h5 style="color:black; font-weight:600"> Bienvenue Mr <?php echo $_SESSION['user']; ?></h5>
 
 <!-- Topbar Navbar -->
+<ul class="navbar-nav mr-auto">
+<li class="nav-item" > <a class="nav-link" href="./../admin/" style="color:red; font-weight:600;font-size:1.4rem">Dashboard</a> </li>
+  <li class="nav-item" > <a href="./../" class="nav-link ml-3" style="color:black; font-weight:600" target="_blank"><i class="fas fa-home mr-1"></i>  website</a> </li>
+</ul>
 <ul class="navbar-nav ml-auto">
- 
-
   <div class="topbar-divider d-none d-sm-block"></div>
 
   <!-- Nav Item - User Information -->
@@ -29,7 +30,6 @@
       </a>
     </div>
   </li>
-
 </ul>
 
 </nav>

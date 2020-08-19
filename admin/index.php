@@ -15,7 +15,7 @@
         <div class="container-fluid">
 
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            <h1 class="h3 mb-0 text-gray-800">Statistiques</h1>
           </div>
 
           <div class="row">
@@ -137,32 +137,39 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
+                  <div class="pt-4 pb-2">
                     <table class="table table-bordered">
                       <thead class="thead-dark">
                         <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">Nom</th>
-                          <th scope="col">Image</th>
-                          <th>Action</th>
+                          <th >#</th>
+                          <th >Nom</th>
+                          <th >Image</th>
+                          <th >Action</th>
                         </tr>
                       </thead>
                       <tbody style="font-weight:700;color:black">
-                       <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-                          <tr>
-                              <td ><?php echo $row['id'] ?></td>
-                              <td ><?php echo substr($row['recetteName'],0,25); ?></td>
-                              <td><img src="" alt=""></td>
-                              <td>
-                                <select name="" id="" class="custom-select" onchange="window.location.href=this.value;">
-                                  <option value="">Choisi</option>
-                                  <option value="./../details.php?id=<?php echo $row['id'] ?>">Affiche</option>
-                                  <option value="./../admin/edit.php?id=<?php echo $row['id'] ?>">Edit</option>
-                                  <option value="./../admin/recette/delete.php?id=<?php echo $row['id'] ?>">Delete</option>
-                                </select>
-                              </td>
-                        </tr>
-                        <?php } ?>
+                       <?php 
+                              if(mysqli_num_rows($result) > 0){ 
+                                    while (    $row = mysqli_fetch_assoc($result)  ) { ?>
+                                          <tr>
+                                              <td ><?php echo $row['id'] ?></td>
+                                              <td ><?php echo substr($row['recetteName'],0,25) . ' ...' ?></td>
+                                              <td><img src="" alt=""></td>
+                                              <td>
+                                                <select name="" id="" class="custom-select" onchange="window.location.href=this.value;">
+                                                  <option value="">Choisi</option>
+                                                  <option value="./../details.php?id=<?php echo $row['id'] ?>">Affiche</option>
+                                                  <option value="./../admin/edit.php?id=<?php echo $row['id'] ?>">Edit</option>
+                                                  <option value="./../admin/recette/delete.php?id=<?php echo $row['id'] ?>">Delete</option>
+                                                </select>
+                                              </td>
+                                        </tr>
+                                <?php }; 
+                              }else { ?>
+                                    <tr>
+                                        <td colspan="5" class="text-center" style="font-size:1.3rem">Aucun recette disponible</td>
+                                  </tr>
+                              <?php }?>
                         
                       </tbody>
                     </table>
@@ -195,8 +202,14 @@
                               </select>
                             </div>
                             <div class="form-group">
+                              <label for="">Titre du régime</label>
+                              <input class="form-control" id="titreRegime" placeholder="Titre de Régime" type="text" name="titreRegime">
+
+                            </div>
+                            <div class="form-group">
                               <label for="description">Description du régime</label>
-                              <textarea class="form-control" id="description" placeholder="Recette description" rows="8" name="recetteDescription"></textarea>
+                              <textarea class="form-control" id="description" placeholder="Recette description" rows="25" name="recetteDescription"></textarea>
+
                             </div>
                             
                             <div class="form-group">
@@ -222,7 +235,7 @@
             <div class="col-xl-6 col-lg-5">
               <div class="card shadow mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">LISTES DES RECETTES</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">LISTES DES REGIMES</h6>
                   <div class="dropdown no-arrow">
                     <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -243,17 +256,10 @@
                       </thead>
                       <tbody>
                         <tr>
-                          <td >1</td>
-                          <td >Reccete title Reccete title Reccete title Reccete </td>
-                          <td><img src="" alt=""></td>
-                          <td>
-                            <select name="" id="" class="custom-select">
-                              <option value="">Choisi</option>
-                              <option value="">Affiche</option>
-                              <option value="">Edit</option>
-                              <option value="">Delete</option>
-                            </select>
-                          </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                           
                         </tr>
                       </tbody>
