@@ -12,16 +12,27 @@
         $password = mysqli_real_escape_string($connect,$_POST['password']); 
       
 
-        $sql = "INSERT INTO `users`(`id`, `nom`, `prenom`, `age`, `username`, `password`, 'role') VALUES (NULL,'$nom','$prenom','$age','$username','$password','visiteur')";
-        $result = mysqli_query($connect,$sql)  or die('error inserting new user') ;
+        $sql = "INSERT INTO `users`(`id`, `nom`, `prenom`, `age`, `username`, `password`, `role`) VALUES (NULL,'$nom','$prenom','$age','$username','$password','visiteur')";
+        $result = mysqli_query($connect,$sql)  or die(mysqli_error($connect)) ;
         
         if($result) {
-            $_SESSION['user'] = $prenom;            
-            header("location: ../index.php");
-         }
-
+            $sql = "SELECT * FROM users WHERE username = '$username' and password = '$password'";
+            $result = mysqli_query($connect,$sql);
+            $row = mysqli_fetch_assoc($result);
+            $count = mysqli_num_rows($result);
+            if($count == 1) {
+                $_SESSION['user'] = $row["prenom"];  
+                $_SESSION['role'] = $row["role"];  
+                if($row['role'] == 'admin'){
+                    header("location: ../admin/index.php");
+                }else{
+                    header("location: ../index.php");
+            }          
+            }else{
+                header("location: ../index.php");
+            }
     }
 
-
+}
 
 ?>

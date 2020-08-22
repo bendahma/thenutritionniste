@@ -15,7 +15,7 @@
               <a class="nav-link" href="./recette.php"><i class="fas fa-utensils"></i> Recettes et cuisine </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-heartbeat"></i> Ton programmes  </a>
+              <a class="nav-link" href="./choisiRegime.php"><i class="fas fa-heartbeat"></i> Ton programmes  </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./aboutUs.php"><i class="fas fa-search"></i> About us  </a>

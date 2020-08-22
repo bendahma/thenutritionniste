@@ -82,7 +82,7 @@
                 <h3> Le Regime Qui Vous Convients  </h3>   
                 <p> Tous les régimes prétendument miracles risquent à la longue de vous coûter cher, non seulement en termes d'argent mais aussi en termes de santé. Pourtant cette fois, vous pensez avoir trouvé LE régime miracle.<br/>Avant de vous embarquer pour la énième fois dans cette spirale, interrogez-vous sur la méthode que vous avez décidé de suivre , notre site va vous aider à trouver le regime qui vous vas !!</p>
                 <?php if(isset($_SESSION['user'])) { 
-                            echo "<a href='' class='btn btn-success btn-block mb-4'> Choisi Votre Regime " . $_SESSION['user'] . '</a> ' ; 
+                            echo "<a href='./choisiRegime.php' class='btn btn-success btn-block mb-4'> Choisi Votre Regime " . $_SESSION['user'] . '</a> ' ; 
                       }else {
                         echo '<a type="button" class="btn btn-success btn-block mb-4" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>';
                       }; ?>
@@ -96,7 +96,7 @@
                     <p> Pas toujours faciles de savoir quoi cuisiner quand on est pressé. Nos idées de recettes originales, gourmandes et healthy, à réaliser en un clin d’œil. </p>
                     <br><br><br><br>
                     <?php if(isset($_SESSION['user'])) { 
-                            echo "<a href='' class='btn btn-primary btn-block mb-4'> Choisi une recette " . $_SESSION['user'] . '</a> ' ; 
+                            echo "<a href='./recette.php' class='btn btn-primary btn-block mb-4'> Choisi une recette " . $_SESSION['user'] . '</a> ' ; 
                       }else {
                         echo '<a type="button" class="btn btn-primary btn-block mb-4" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>';
                       }; ?>

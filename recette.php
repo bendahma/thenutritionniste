@@ -1,5 +1,12 @@
 <?php include_once('./inc/header.php'); ?>
+<!-- Recette data -->
+<?php
 
+    $sql = "SELECT * FROM `recette`;" ;
+    $result = mysqli_query($connect,$sql) or die(mysqli_error($connect));
+    //die(print_r($dataRecette));
+
+?>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -36,17 +43,19 @@
         <h1>
             NOS RECETTES
         </h1>
-        <div class="row recetteDetails mt-4">
-            <div class="col-lg-4">
-              <a href="" class="recetteLink">
+        <div class="row  mt-4">
+          <?php while($dataRecette = mysqli_fetch_assoc($result)){ ?>
+          <div class="col-lg-4">
+              <a href="./detailsRecette.php?id=<?php echo $dataRecette['id'] ?>" class="recetteLink">
                   <div class="card card-default">
                     <div class="card-body">
-                          <img class="" src="https://juliasalbum.com/wp-content/uploads/2018/05/Basil-Pesto-Tomato-Mozzarella-Chicken-Bake-10-1-500x456.jpg" height="" alt="">
-                          <h5 class="text-center my-3">BASIL PESTO TOMATO MOZZARELLA CHICKEN BAKE</h5>
+                          <img class="justify-content-center" src="./upload/recette/<?php echo $dataRecette['recetteImage'] ?>" height="200px" width="" alt="">
+                          <h5 class="text-center mt-2"><?php echo $dataRecette['recetteName'] ?></h5>
                     </div>
                   </div>
               </a>
             </div>
+            <?php } ?>
         </div>
     </div>
 </section>

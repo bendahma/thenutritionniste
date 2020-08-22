@@ -275,7 +275,28 @@ input[class="form-input"]{
     transition: 0.2s linear;
     
 }
+
+select[class="form-input"]{
+    width: 240px;
+    height: 50px;
+  
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    
+}
+
 input[id="txt-input"] {width: 250px;}
+select[id="txt-input"] {width: 250px;}
 /* focus  */
 input:focus {
     transform: translateX(-2px);
@@ -380,4 +401,28 @@ background-color: #252537;
 
 #recetteList .card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#choixProgramme {
+    min-height: 90vh;
+    background-color: rgb(250, 249, 249);
+
+}
+
+#choixProgramme select{
+    width: 60vw;
+    height: 10vh;
+    background-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: transparent;
+    border-radius: 15px;
+}
+
+#choixProgramme select  {
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+
+#choixProgramme select option {
+    font-size: 1rem;
 }

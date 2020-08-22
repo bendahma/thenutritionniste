@@ -1,27 +1,106 @@
     <!-- Footer section -->
-    <section id="footer" >
-        <div class="d-flex align-items-center justify-content-around">
-        <div class="logo">
-              <a class="navbar-brand" href="./"> <img src="assets/image/logo.jpg"> The Nutritionist </a>
-          </div>
-          <div class="social-media">
-          <h5 class="justify-content-center text-center mb-3" >Suivi nous sur</h5>
-              <div class="d-flex justify-content-around">
-                <a href="" class="mr-5"> <span style="font-size:2.3rem;color:blue"> <i class="fab fa-facebook"></i></span> </a>
-                <a href="" class="mr-5"><span style="font-size:2.3rem;color:#833AB4"><i class="fab fa-instagram"></i></span></a>
-                <a href="" class=""><span style="font-size:2.3rem;color:#1DA1F2"><i class="fab fa-twitter"></i></span></a>
-              </div>
-          </div>
-          <div class="contact-section">
-              <h6>Contacter-Nous</h6>
-              <p>06.66.93.01.03</p>
-              <p>mkaddourbendahma@gmail.com</p>
-              <p>N° 953 Cite la vie blank Skikda</p>
-          </div>
-        </div>
-          <div>2020 Tout les droit sont reserve</div>
-       
-    </section>
+    <!-- Footer -->
+<footer class="page-footer font-small stylish-color-dark pt-4" style="background-color:#ffe">
+
+<!-- Footer Links -->
+<div class="container text-center text-md-left">
+
+  <div class="row">
+      <div class="col-md-3 mx-auto my-auto">
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">The Nutritionist </h5>
+      </div>
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-4 mx-auto">
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">About Us</h5>
+        <p> ... </p>
+
+      </div>
+    
+      <hr class="clearfix w-100 d-md-none">
+
+      <div class="col-md-2 mx-auto">  </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+    
+    <div class="col-md-2 mx-auto">
+
+      <!-- Links -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+      <ul class="list-unstyled">
+        <li class="mb-3">
+        <a class="" href="index.php"><i class="fas fa-home "></i> Accueil </a>
+        </li>
+        <li class="mb-3">
+        <a class="" href="./recette.php"><i class="fas fa-utensils"></i> Recettes et cuisine </a>
+        </li>
+        <li class="mb-3">
+        <a class="" href="./choisiRegime.php"><i class="fas fa-heartbeat"></i> Ton programmes  </a>
+        </li>
+        <li class="mb-3">
+        <a class="" href="#"><i class="fas fa-address-card"></i>  Contacter-nous  </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+<hr>
+<?php if(!isset($_SESSION['user'])){ ?> 
+
+<ul class="list-unstyled list-inline text-center py-2">
+  <li class="list-inline-item">
+    <h5 class="mb-1">Register for free</h5>
+  </li>
+  <li class="list-inline-item">
+    <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+  </li>
+</ul>
+
+<hr>
+<?php } ?>
+
+<ul class="list-unstyled list-inline text-center">
+  <li class="list-inline-item">
+    <a class="btn-floating btn-fb mx-1">
+      <i class="fab fa-facebook-f fa-2x"> </i>
+    </a>
+  </li>
+  <li class="list-inline-item">
+    <a class="btn-floating btn-tw mx-1">
+      <i class="fab fa-twitter fa-2x"> </i>
+    </a>
+  </li>
+  <li class="list-inline-item">
+    <a class="btn-floating btn-gplus mx-1">
+      <i class="fab fa-google-plus-g fa-2x"> </i>
+    </a>
+  </li>
+  <li class="list-inline-item">
+    <a class="btn-floating btn-li mx-1">
+      <i class="fab fa-linkedin-in fa-2x"> </i>
+    </a>
+  </li>
+  <li class="list-inline-item">
+    <a class="btn-floating btn-dribbble mx-1">
+      <i class="fab fa-dribbble fa-2x"> </i>
+    </a>
+  </li>
+</ul>
+<hr>
+<div class="footer-copyright text-center py-3">
+  © 2020 - Present Copyright:
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>

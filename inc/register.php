@@ -18,14 +18,21 @@
                                   </header>
                                   <br>
                                   <div class="field-set">
-                                        <span class="input-item"> <i class="fa fa-user-circle"></i> </span>
+                                        <span class="input-item"> <i class="fas fa-user-alt"></i> </span>
                                         <input class="form-input" id="txt-input" type="text" placeholder="Nom" required name="nom">
                                         <br>    
-                                        <span class="input-item"> <i class="fa fa-user-circle"></i> </span>
+                                        <span class="input-item"> <i class="fas fa-user-friends"></i> </span>
                                         <input class="form-input" id="txt-input" type="text" placeholder="Prenom" required name="prenom">
                                         <br>    
-                                        <span class="input-item"> <i class="fa fa-user-circle"></i> </span>
+                                        <span class="input-item"> <i class="fas fa-calendar-week"></i> </span>
                                         <input class="form-input" id="txt-input" type="text" placeholder="Age" required name="age">
+                                        <br>  
+                                        <span class="input-item"> <i class="fas fa-female"></i> </span>
+                                        <select name="sex" id="txt-input" class="form-input" require>
+                                            <option value="" selected disabled>Sex</option>
+                                            <option value="Homme" >Homme</option>
+                                            <option value="Femme" >Femme</option>
+                                        </select>
                                         <br>  
                                         <span class="input-item"> <i class="fa fa-user-circle"></i> </span>
                                         <input class="form-input" id="txt-input" type="text" placeholder="@UserName" required name="username">
