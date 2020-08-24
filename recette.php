@@ -45,7 +45,7 @@
         </h1>
         <div class="row  mt-4">
           <?php while($dataRecette = mysqli_fetch_assoc($result)){ ?>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-4">
               <a href="./detailsRecette.php?id=<?php echo $dataRecette['id'] ?>" class="recetteLink">
                   <div class="card card-default">
                     <div class="card-body">

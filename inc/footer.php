@@ -1,6 +1,6 @@
     <!-- Footer section -->
     <!-- Footer -->
-<footer class="page-footer font-small stylish-color-dark pt-4" style="background-color:#ffe">
+<footer class="page-footer font-small stylish-color-dark pt-4" style="background-color:rgb(255, 160, 125) !important;">
 
 <!-- Footer Links -->
 <div class="container text-center text-md-left">
@@ -46,24 +46,22 @@
     </div>
     <hr class="clearfix w-100 d-md-none">
 
-    <div class="col-md-2 mx-auto">
+    <div class="col-md-3 mx-auto">
 
       <!-- Links -->
       <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
 
       <ul class="list-unstyled">
         <li class="mb-3">
-        <span><i class="fas fa-home "></i> Accueil </span>
+        <span><i class="fas fa-phone-alt"></i> 05.59.43.26.14 </span>
+        </li>
+        <li class="mb-3 ">
+        <span class="align-items-center"><i class="fas fa-envelope"></i> mina.batoir2000@gmail.com </span>
         </li>
         <li class="mb-3">
-        <span><i class="fas fa-utensils"></i> Recettes et cuisine </span>
+        <span><i class="fas fa-map-marker-alt"></i> Skikda Skikda Algeria </span>
         </li>
-        <li class="mb-3">
-        <span><i class="fas fa-hamburger"></i> Ton régime  </span>
-        </li>
-        <li class="mb-3">
-        <span><i class="fas fa-address-card"></i>  Contacter-nous  </span>
-        </li>
+        
       </ul>
 
     </div>

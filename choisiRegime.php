@@ -5,17 +5,13 @@
 
 <!----services---->
 <section id="choixProgramme" class="d-flex justify-content-center">
-    <div class="container pb-5 ">
+    <div class="container pb-5 my-5">
         <h1 class="my-5 d-flex justify-content-center">
             Qu'est ce que tu besion
         </h1>
 
         <div class=" row ">
-            <!-- <select name="choixRegime" id="">
-                <option value="" selected disabled>Choisi un programme pour</option>
-                <option value="Prendre du poids">Prendre du poids</option>
-                <option value="prendre de poids">Perdre du poids</option>
-            </select> -->
+          <?php if(isset($_SESSION['user'])){?>
             <div class="col-lg-4" id="recetteList">
               <a href="./prendre.php" class="recetteLink">
                   <div class="card card-default">
@@ -46,8 +42,18 @@
                   </div>
               </a>
             </div>
-            
+            <?php }else{ ?>
+            <div class="d-flex justify-content-center" style="min-width:75vw">
+                  <h3>Connecté pour access à nos regimes </h3>
                 
+                  <div class="ml-2 align-items-center" style="border-bottom: 2px solid red;padding-bottom:5px">
+                  <a type="button" class="h4 text-danger" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>  OU 
+                  <a type="button" class="h4" data-toggle="modal" data-target="#registerModel">S'inscrire</a> 
+
+                  </div>
+                  
+            </div>
+            <?php } ?>    
         </div>
     </div>
 </section>

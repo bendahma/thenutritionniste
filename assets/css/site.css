@@ -26,7 +26,7 @@ text-align: left;
 font-weight: 700;}
 .navbar
 {
-    background: rgb(243, 134, 94) !important;
+    background: rgb(255, 160, 125) !important;
 }
 .navbar-toggler
 {
@@ -404,7 +404,7 @@ background-color: #252537;
 }
 
 #choixProgramme {
-    min-height: 90vh;
+    /*min-height: 90vh;*/
     background-color: rgb(250, 249, 249);
 
 }

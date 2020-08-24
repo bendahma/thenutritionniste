@@ -37,8 +37,14 @@
                     </a>
                     </div>
             <?php } }else {?>
-                <div class="d-flex justify-content-center w-100" >
-                     <h4 class=" mt-4">Aucun Régime Disponible Pour Le Moment</h4> 
+                <div class="d-flex justify-content-center " style="width:75vw">
+                    <span style="color:red;font-size:5rem"> <i class="far fa-sad-tear"></i> </span>    
+
+                </div>
+                <div class="d-flex justify-content-center mb-5" style="width:75vw">
+                
+                <h4 class=" mt-4">Aucun Régime Disponible Pour Le Moment</h4> 
+
                 </div>
             <?php } ?>
             
