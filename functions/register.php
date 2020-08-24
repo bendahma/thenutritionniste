@@ -23,6 +23,7 @@
             if($count == 1) {
                 $_SESSION['user'] = $row["prenom"];  
                 $_SESSION['role'] = $row["role"];  
+                $_SESSION['sex'] = $row['sex'];
                 if($row['role'] == 'admin'){
                     header("location: ../admin/index.php");
                 }else{

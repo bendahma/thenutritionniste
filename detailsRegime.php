@@ -31,7 +31,7 @@
 </section>
 
 <div class="container" >
-    <div class="mt-2">
+    <div class="mt-5">
         <?php echo $dataRegime['description'] ?>
     </div>
     

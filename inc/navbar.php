@@ -9,19 +9,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php"><i class="fas fa-home "></i> Accueil </a>
+              <a class="nav-link" href="./"><i class="fas fa-home "></i> Accueil </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./recette.php"><i class="fas fa-utensils"></i> Recettes et cuisine </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./choisiRegime.php"><i class="fas fa-heartbeat"></i> Ton programmes  </a>
+              <a class="nav-link" href="./choisiRegime.php"><i class="fas fa-hamburger"></i> Ton régime  </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./aboutUs.php"><i class="fas fa-search"></i> About us  </a>
+              <a class="nav-link" href="./aboutUs.php"><i class="fas fa-heartbeat"></i> About us  </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-address-card"></i>  Contacter-nous  </a>
+                <a class="nav-link" href="./contact.php"><i class="fas fa-address-card"></i>  Contacter-nous  </a>
               </li>
           </ul>
           <ul class="navbar-nav my-2 my-lg-0">
@@ -34,7 +34,6 @@
                       </a>
                       <!-- Dropdown - User Information -->
                       <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <div class="dropdown-divider"></div>
                        <?php if($_SESSION['role'] == 'admin'){ ?>
                         <a class="dropdown-item" href="./admin/index.php">
                         <i class="fa fa-user-circle fa-sm fa-fw mr-2 text-gray-400"></i>

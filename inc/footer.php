@@ -20,9 +20,7 @@
     
       <hr class="clearfix w-100 d-md-none">
 
-      <div class="col-md-2 mx-auto">  </div>
 
-      <hr class="clearfix w-100 d-md-none">
 
     
     <div class="col-md-2 mx-auto">
@@ -32,16 +30,39 @@
 
       <ul class="list-unstyled">
         <li class="mb-3">
-        <a class="" href="index.php"><i class="fas fa-home "></i> Accueil </a>
+        <a class="" href="./"><i class="fas fa-home "></i> Accueil </a>
         </li>
         <li class="mb-3">
         <a class="" href="./recette.php"><i class="fas fa-utensils"></i> Recettes et cuisine </a>
         </li>
         <li class="mb-3">
-        <a class="" href="./choisiRegime.php"><i class="fas fa-heartbeat"></i> Ton programmes  </a>
+        <a class="" href="./choisiRegime.php"><i class="fas fa-hamburger"></i> Ton régime  </a>
         </li>
         <li class="mb-3">
-        <a class="" href="#"><i class="fas fa-address-card"></i>  Contacter-nous  </a>
+        <a class="" href="./contact.php"><i class="fas fa-address-card"></i>  Contacter-nous  </a>
+        </li>
+      </ul>
+
+    </div>
+    <hr class="clearfix w-100 d-md-none">
+
+    <div class="col-md-2 mx-auto">
+
+      <!-- Links -->
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+
+      <ul class="list-unstyled">
+        <li class="mb-3">
+        <span><i class="fas fa-home "></i> Accueil </span>
+        </li>
+        <li class="mb-3">
+        <span><i class="fas fa-utensils"></i> Recettes et cuisine </span>
+        </li>
+        <li class="mb-3">
+        <span><i class="fas fa-hamburger"></i> Ton régime  </span>
+        </li>
+        <li class="mb-3">
+        <span><i class="fas fa-address-card"></i>  Contacter-nous  </span>
         </li>
       </ul>
 
@@ -94,6 +115,7 @@
   </li>
 </ul>
 <hr>
+
 <div class="footer-copyright text-center py-3">
   © 2020 - Present Copyright:
 </div>
