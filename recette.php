@@ -4,47 +4,17 @@
 
     $sql = "SELECT * FROM `recette`;" ;
     $result = mysqli_query($connect,$sql) or die(mysqli_error($connect));
-    //die(print_r($dataRecette));
-
+    
 ?>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <a href="">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="https://juliasalbum.com/wp-content/uploads/2018/05/Basil-Pesto-Tomato-Mozzarella-Chicken-Bake-10-1-500x456.jpg" alt="Second slide">
-            <div class="carousel-caption d-none d-md-block">
-                <div class="carousel-caption d-none d-md-block">
-                  <div class="innerC">
-                      <small><b> DERNIER RECCETE</b> </small>
-                      <h5> BASIL PESTO TOMATO MOZZARELLA CHICKEN BAKE </h5>
-                  </div> 
-                </div>  
-            </div>    
-          </div>
-    </a>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<br><br><br>
+
 <section id="recetteList">
-    <div class="container pb-5">
-        <h1>
+    <div class="container py-5">
+        <h1 class="my-5">
             NOS RECETTES
         </h1>
+        <?php if(isset($_SESSION['user'])){?>
         <div class="row  mt-4">
-          <?php while($dataRecette = mysqli_fetch_assoc($result)){ ?>
+          <?php if(mysqli_num_rows($result) > 0){ while($dataRecette = mysqli_fetch_assoc($result)){ ?>
           <div class="col-lg-4 mb-4">
               <a href="./detailsRecette.php?id=<?php echo $dataRecette['id'] ?>" class="recetteLink">
                   <div class="card card-default">
@@ -55,11 +25,32 @@
                   </div>
               </a>
             </div>
+            <?php } }else {?>
+              <div class="d-flex justify-content-center " style="width:85vw">
+                    <span style="color:red;font-size:5rem"> <i class="far fa-sad-tear"></i> </span>    
+
+                </div>
+                <div class="d-flex justify-content-center mb-5" style="width:85vw">
+                
+                <h4 class=" mt-4">Aucun Recette Disponible Pour Le Moment</h4> 
+
+                </div>
             <?php } ?>
         </div>
+        <?php }else{ ?>
+            <div class="d-flex justify-content-center" style="min-width:75vw">
+                  <h3>Connecté pour access à nos recettes </h3>
+                
+                  <div class="ml-2 align-items-center" style="border-bottom: 2px solid red;padding-bottom:5px">
+                  <a type="button" class="h4 text-danger" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>  OU 
+                  <a type="button" class="h4" data-toggle="modal" data-target="#registerModel">S'inscrire</a> 
+
+                  </div>
+                  
+            </div>
+            <?php } ?>
     </div>
 </section>
-
 
 
 <?php include_once('./inc/footer.php'); ?>

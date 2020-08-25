@@ -50,13 +50,13 @@
 </div>
 
 <!----SANTE---->
-<section id="sante">
+<section id="sante" style="background-color:rgb(250, 249, 249);">
     <div class="container pb-5">
         <h1>
             POURQUOI FAUT IL ETRE EN BONNE SANTE
         </h1>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" style="text-align: justify;text-justify: inter-word;">
             <h3>La chose la plus importante de la vie</h3> 
             On est sûr d’une chose, vous pouvez avoir toutes les merveilles du monde à vos pieds, cela ne vaudra pas la peine si votre santé fait défaut. Le bonheur commence par la bonne santé. De nombreuses personnes consacrent une grande partie de leurs efforts à se maintenir en bonne santé. Si vous demandez auprès de votre entourage, la santé figurera sans nul doute dans le top 3 des choses les plus importantes dans la vie avec l’argent, et l’amour. Bien que ce dernier perd de plus en plus l’intérêt des gens. Le monde en général a compris l’importance de la santé tant l’on consacre le droit à la santé comme un principe universel. Chacun a droit à la santé et au bien-être sans distinction et particulièrement les enfants. La santé couvre trois aspects de notre personne. Il s’agit du bien-être sur le plan corporel, psychologique, mais également social. Pour les organismes internationaux de santé, la notion s’étend à tous les éléments ayant une relation avec comme : l’accès à de l’eau potable et aux installations sanitaires. La santé publique appartient au domaine de l’ordre public à laquelle veillent les autorités publiques.
             </div>

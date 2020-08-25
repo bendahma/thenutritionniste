@@ -37,7 +37,7 @@
                     </a>
                     </div>
             <?php } }else {?>
-                <div class="d-flex justify-content-center mt-5" style="width:75vw">
+                <div class="d-flex justify-content-center " style="width:75vw">
                     <span style="color:red;font-size:5rem"> <i class="far fa-sad-tear"></i> </span>    
 
                 </div>

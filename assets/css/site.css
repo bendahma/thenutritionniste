@@ -408,6 +408,11 @@ background-color: #252537;
     background-color: rgb(250, 249, 249);
 
 }
+#recetteList {
+    /*min-height: 90vh;*/
+    background-color: rgb(250, 249, 249);
+
+}
 
 #choixProgramme select{
     width: 60vw;
@@ -425,4 +430,29 @@ background-color: #252537;
 
 #choixProgramme select option {
     font-size: 1rem;
+}
+
+    textarea:hover, input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+.contactClass{
+    border-color: transparent !important; 
+    background-color: transparent !important;
+    background-image: none !important;
+    border-bottom: 1px solid black !important;
+    font-size:1rem;
 }
