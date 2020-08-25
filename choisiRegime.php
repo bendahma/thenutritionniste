@@ -5,7 +5,7 @@
 
 <!----services---->
 <section id="choixProgramme" class="d-flex justify-content-center">
-    <div class="container pb-5 my-5">
+    <div class="container pb-5 my-4">
         <h1 class="my-5 d-flex justify-content-center">
             Qu'est ce que tu besion
         </h1>
@@ -45,11 +45,9 @@
             <?php }else{ ?>
             <div class="d-flex justify-content-center" style="min-width:75vw">
                   <h3>Connecté pour access à nos regimes </h3>
-                
                   <div class="ml-2 align-items-center" style="border-bottom: 2px solid red;padding-bottom:5px">
                   <a type="button" class="h4 text-danger" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>  OU 
                   <a type="button" class="h4" data-toggle="modal" data-target="#registerModel">S'inscrire</a> 
-
                   </div>
                   
             </div>

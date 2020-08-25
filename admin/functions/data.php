@@ -44,3 +44,29 @@
     }
 
 ?>
+
+<?php 
+        $sql = "SELECT * FROM `messages`;" ;
+        $dataMessages = mysqli_query($connect,$sql) or die(mysqli_error($connect));
+?>
+
+<?php 
+
+    $userCountSql = "SELECT COUNT(*) AS 'count' FROM `users` ;";
+    $recetteCountSql = "SELECT COUNT(*) AS 'count' FROM `recette` ;";
+    $regimeCountSql = "SELECT COUNT(*) AS 'count' FROM `regime` ;";
+    $messageCountSql = "SELECT COUNT(*) AS 'count' FROM `users` ;";
+
+    $userResult = mysqli_query($connect,$userCountSql) or die(mysqli_error($connect));
+    $recetterResult = mysqli_query($connect,$recetteCountSql) or die(mysqli_error($connect));
+    $regimeResult = mysqli_query($connect,$regimeCountSql) or die(mysqli_error($connect));
+    $messageResult = mysqli_query($connect,$messageCountSql) or die(mysqli_error($connect));
+
+    $userCout = mysqli_fetch_assoc($userResult);
+    $recetterCout = mysqli_fetch_assoc($recetterResult);
+    $regimeCout = mysqli_fetch_assoc($regimeResult);
+    $messageCout = mysqli_fetch_assoc($messageResult);
+
+
+
+?>

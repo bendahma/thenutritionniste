@@ -26,7 +26,7 @@
     <div class="col-md-2 mx-auto">
 
       <!-- Links -->
-      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">LIEN</h5>
 
       <ul class="list-unstyled">
         <li class="mb-3">
@@ -49,7 +49,7 @@
     <div class="col-md-3 mx-auto">
 
       <!-- Links -->
-      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Contact</h5>
+      <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CONTACTER-NOUS</h5>
 
       <ul class="list-unstyled">
         <li class="mb-3">

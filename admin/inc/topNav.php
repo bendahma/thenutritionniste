@@ -32,6 +32,12 @@
           
         </div>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link " style="color:black; font-weight:600"  href="./../admin/messages.php" id="regeDropDown" >
+        <i class="fas fa-envelope mr-1"></i> Messages
+        </a>
+        
+      </li>
 </ul>
 <ul class="navbar-nav ml-auto">
   <div class="topbar-divider d-none d-sm-block"></div>
