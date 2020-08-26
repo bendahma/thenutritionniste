@@ -14,7 +14,6 @@
                         </div>
                     <?php } unset($_SESSION['sendMessage']);?>
             </div>
-            
         </div>
         <div class="row">
             <div class="col-lg-7">

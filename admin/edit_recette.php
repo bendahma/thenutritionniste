@@ -1,9 +1,5 @@
 <?php include('./inc/header.php'); ?>
 <?php include('./functions/data.php'); ?>
-
-<?php //include("./inc/mainNav.php"); 
-?>
-   
     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column ">
 

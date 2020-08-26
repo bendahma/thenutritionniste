@@ -37,9 +37,12 @@
                                     </tr>
                                 </thead>
                                 <tbody style="font-weight:700;color:black">
-                                <?php 
+                                
+                                    <!-- check if we have recette in our database based on the data we recieved -->
+                                    <?php 
                                         if(mysqli_num_rows($dataRecette) > 0){ 
-                                                while ($row = mysqli_fetch_assoc($dataRecette)  ) { ?>
+                                        // if we have data loop throught it and display the data
+                                            while ($row = mysqli_fetch_assoc($dataRecette)  ) { ?>
                                                     <tr>
                                                         <td ><?php echo $row['id'] ?></td>
                                                         <td ><?php echo $row['recetteName'] ?></td>
@@ -53,9 +56,9 @@
                                                             </select>
                                                         </td>
                                                     </tr>
-                                            <?php }; 
-                                        }else { ?>
-                                                <tr>
+                                            <?php }; }else { ?>
+                                            <!-- else show no data message -->
+                                             <tr>
                                                     <td colspan="5" class="text-center" style="font-size:1.3rem">Aucun recette disponible</td>
                                             </tr>
                                         <?php }?>

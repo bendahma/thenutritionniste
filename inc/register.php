@@ -39,24 +39,12 @@
                                         <br>      
                                         <span class="input-item"> <i class="fa fa-key"></i> </span>
                                         <input class="form-input" type="password" placeholder="Password" id="pwd"  name="password" required name="password">
-                                        <span> <i class="fa fa-eye" aria-hidden="true"  type="button" id="eye"></i> </span>
                                         <br>
                                         <button type="submit" class="log-in" name="register"> Créer un compte </button>
                                   </div>
                           </div>
-                    </form>
-
-                
+                    </form>  
         </div>
-        <!-- <div class="modal-footer mr-auto">
-          <!-- <div class="row">
-            <div class="col">
-              <input type="submit" name="login" class="btn btn-success btn-block" value="Login">
-            </div>
-          </div> -->
-        </div> -->
-    <!-- </form> -->
-
       </div>
     </div>
   </div>

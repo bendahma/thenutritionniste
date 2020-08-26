@@ -46,7 +46,9 @@
                         </tr>
                       </thead>
                       <tbody>
+                      <!-- check if we have regime in our database based on the data we recieved -->
                         <?php if(mysqli_num_rows($dataregime) != 0){
+                          // if we have data loop throught it and display the data
                                   while($data = mysqli_fetch_assoc($dataregime)){  
                         ?>
                                     <tr>
@@ -65,6 +67,7 @@
                                           </td>
                                     </tr>
                                   <?php } }else { ?>
+                                  <!-- else show no data message -->
                                         <tr>
                                             <td colspan="5" class="text-center" style="font-size:1.3rem">Aucun regime disponible</td>
                                         </tr>
