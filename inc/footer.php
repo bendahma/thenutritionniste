@@ -30,16 +30,16 @@
 
       <ul class="list-unstyled">
         <li class="mb-3">
-        <a class="" href="./"><i class="fas fa-home "></i> Accueil </a>
+        <a class="" href="./" style="color:black !important; font-weight:500; text-decoration:none"><i class="fas fa-home "></i> Accueil </a>
         </li>
         <li class="mb-3">
-        <a class="" href="./recette.php"><i class="fas fa-utensils"></i> Recettes et cuisine </a>
+        <a class="" href="./recette.php" style="color:black !important; font-weight:500; text-decoration:none"><i class="fas fa-utensils"></i> Recettes et cuisine </a>
         </li>
         <li class="mb-3">
-        <a class="" href="./choisiRegime.php"><i class="fas fa-hamburger"></i> Ton régime  </a>
+        <a class="" href="./choisiRegime.php" style="color:black !important; font-weight:500; text-decoration:none"><i class="fas fa-hamburger"></i> Ton régime  </a>
         </li>
         <li class="mb-3">
-        <a class="" href="./contact.php"><i class="fas fa-address-card"></i>  Contacter-nous  </a>
+        <a class="" href="./contact.php" style="color:black !important; font-weight:500; text-decoration:none"><i class="fas fa-address-card"></i>  Contacter-nous  </a>
         </li>
       </ul>
 

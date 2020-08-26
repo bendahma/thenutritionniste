@@ -26,27 +26,27 @@
                       <div class="">
                         <form action="./functions/recette.php" method="POST" enctype="multipart/form-data">
                                 <div class="form-group">
-                                  <label for="titre">Nom du Recette</label>
+                                  <label for="titre" style="font-size:1.2rem;color:black !important;font-weight:600">Nom du Recette</label>
                                   <input type="text" class="form-control" id="titre" name="recetteName">
                                 </div>
                                 <div class="form-group">
-                                  <label for="description">Description du recette</label>
+                                  <label for="description" style="font-size:1.2rem;color:black !important;font-weight:600">Description du recette</label>
                                   <textarea class="form-control" id="description" placeholder="Recette description" rows="15" name="recetteDescription"></textarea>
                                 </div>
                                 <div class="form-group">
-                                  <label for="Ingredients">Ingredients</label>
+                                  <label for="Ingredients" style="font-size:1.2rem;color:black !important;font-weight:600">Ingredients</label>
                                   <textarea  class="form-control" id="ingredients" placeholder="Recette ingredients" rows="15" name="recetteIngredients"></textarea>
                                 </div>
                                 <div class="form-group">
-                                  <label for="Instructions">Instructions</label>
+                                  <label for="Instructions" style="font-size:1.2rem;color:black !important;font-weight:600">Instructions</label>
                                   <textarea  class="form-control" id="Instructions" placeholder="Recette Instructions" rows="15" name="recetteInstructions"></textarea>
                                 </div>
                                 <div class="form-group">
-                                  <label for="NutritionFacts">Nutrition Facts</label>
+                                  <label for="NutritionFacts" style="font-size:1.2rem;color:black !important;font-weight:600">Nutrition Facts</label>
                                   <textarea  class="form-control" id="NutritionFacts" placeholder="Recette Nutrition Facts" rows="15" name="recetteNutritionFacts"></textarea>
                                 </div>
                                 <div class="form-group">
-                                  <label for="">Image</label>
+                                  <label for="" style="font-size:1.2rem;color:black !important;font-weight:600">Image</label>
                                   <input type="file" name="recetteImage" id="" class="form-control">
                                 </div>
                                

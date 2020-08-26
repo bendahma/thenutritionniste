@@ -109,7 +109,7 @@
                     <p> Des medecins et nuttritioniste vont vous guider dans ton regime pour qu on soit sure de votre safety </p>
                     <br><br><br><br><br>
                     <?php if(isset($_SESSION['user'])) { 
-                            echo "<a href='' class='btn btn-warning btn-block mb-4'> Parle avec Quelqu'un " . $_SESSION['user'] . '</a> ' ; 
+                            echo "<a href='./contact.php' class='btn btn-warning btn-block mb-4'> Parle avec Quelqu'un " . $_SESSION['user'] . '</a> ' ; 
                       }else {
                         echo '<a type="button" class="btn btn-warning btn-block mb-4" data-toggle="modal" data-target="#exampleModalCenter"> Se connecter </a>';
                       }; ?>

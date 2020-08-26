@@ -9,7 +9,7 @@
 
 <section id="recetteList">
     <div class="container py-5">
-        <h1 class="my-5">
+        <h1 class="mb-3 mt-2">
             NOS RECETTES
         </h1>
         <?php if(isset($_SESSION['user'])){?>
@@ -19,7 +19,7 @@
               <a href="./detailsRecette.php?id=<?php echo $dataRecette['id'] ?>" class="recetteLink">
                   <div class="card card-default">
                     <div class="card-body">
-                          <img class="justify-content-center" src="./upload/recette/<?php echo $dataRecette['recetteImage'] ?>" height="200px" width="" alt="">
+                          <img class="justify-content-center" src="./upload/recette/<?php echo $dataRecette['recetteImage'] ?>" height="280px" width="310px" alt="">
                           <h5 class="text-center mt-2"><?php echo $dataRecette['recetteName'] ?></h5>
                     </div>
                   </div>

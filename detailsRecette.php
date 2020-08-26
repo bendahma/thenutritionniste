@@ -31,19 +31,19 @@
 
 <div class="container" >
     <div class="mt-5">
-        <h3 class="mb-4"><?php if(!empty($dataRecette['recetteDescription'])) echo "Description de la recette" ?></h3>
+        <h3 class="mb-4" style="color:red; text-decoration:underline"><?php if(!empty($dataRecette['recetteDescription'])) echo "Description de la recette" ?></h3>
         <?php echo $dataRecette['recetteDescription'] ?>
     </div>
     <div class="mt-5">
-        <h3 class="mb-4"><?php if(!empty($dataRecette['recetteIngredients'])) echo "Ingredients" ?></h3>
+        <h3 class="mb-4" style="color:red; text-decoration:underline"><?php if(!empty($dataRecette['recetteIngredients'])) echo "Ingredients" ?></h3>
         <?php echo $dataRecette['recetteIngredients'] ?>
     </div>
-    <div class="mt-5">
-        <h3 class="mb-4"><?php if(!empty($dataRecette['recetteInstructions'])) echo "Instructions" ?></h3>
+    <div class="mt-5" >
+        <h3 class="mb-4" style="color:red; text-decoration:underline"><?php if(!empty($dataRecette['recetteInstructions'])) echo "Instructions" ?></h3>
         <?php echo $dataRecette['recetteInstructions'] ?>
     </div>
     <div class="mt-5">
-        <h3 class="mb-4"><?php if(!empty($dataRecette['recetteNutritionFacts'])) echo "Nutrition" ?></h3>
+        <h3 class="mb-4" style="color:red; text-decoration:underline"><?php if(!empty($dataRecette['recetteNutritionFacts'])) echo "Nutrition" ?></h3>
         <?php echo $dataRecette['recetteNutritionFacts'] ?>
     </div>
 </div>

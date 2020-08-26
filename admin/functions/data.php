@@ -1,18 +1,26 @@
+<!-- Importing the init file witch contain the connection to the database information -->
 <?php require('./../functions/init.php'); ?>
 
 
-<!-- Recette data -->
+<!-- Getting the Recette data so we can display it-->
 <?php
 
+    // the sql request to select the recette data
     $sql = "SELECT * FROM `recette`;" ;
+    // sending the sql request to the database and getting the data - 
+    // if the request or connection not correct we display the error with die(mysqli_error)
     $result = mysqli_query($connect,$sql) or die(mysqli_error($connect));
+    // we turn the mysqli object we recieved to an associated array to display the data 
     $dataRecette = mysqli_fetch_assoc($result);
 
 ?>
 
 <?php
 
+    // the sql request to select the recette data
     $sql = "SELECT * FROM `recette`;" ;
+    // sending the sql request to the database and getting the data - 
+    // if the request or connection not correct we display the error with die(mysqli_error)
     $dataRecette = mysqli_query($connect,$sql) or die(mysqli_error($connect));
     
 ?>

@@ -10,7 +10,7 @@
         $now = new DateTime();
         $created_at =  $now->format('Y-m-d H:i:s');
         $target = "./../../upload/regime/".basename($regimeImage);
-        $sql  = "INSERT INTO `regime`(`id`, `type`, `title` ,`description`, `image`, `created_at`,'sex') VALUES (NULL,'$regimeType','$regimeTitle','$regimeDescription','$regimeImage','$created_at','$regimeSex')";
+        $sql  = "INSERT INTO `regime`(`id`, `type`, `title` ,`description`, `image`, `created_at`,`sex`) VALUES (NULL,'$regimeType','$regimeTitle','$regimeDescription','$regimeImage','$created_at','$regimeSex')";
         $result = mysqli_query($connect,$sql) or die(mysqli_error($connect));
         move_uploaded_file($_FILES['regimeImage']['tmp_name'], $target);
         if($result){
